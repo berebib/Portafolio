@@ -1,165 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #f4f4fc;;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f9f9;
+  color: #333;
 }
 
-header{
-    position: absolute;
-    padding-top: 20px;
-    width:30%;
-    height:70px;
+header {
+  background-color: #00bcd4;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-header img{
-    height: 50px;
-    padding:3%;
-}
-main{
-    position:absolute;
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content:start;
-}
-.container-texto{
-    top:8em;
-   position: relative;
-   left:7em;
-   width: 100%;
-   height: 70%;
-}
-.caja-txt{
-    width:98%;
-    height: 200px;
-    border: none;
-    background-color: #f4f4fc;
-    cursor:pointer;
-    color:#0A3871;
-    font-size: 32px;
-    font-weight: 400;
-    outline: none;
-}
-.caja-txt::placeholder{
-    color:#0A3871;
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.alerta{
-    position:relative;
-    left:7em;
-    display: flex;
-    color:#495057
-}
-.container-btns{
-    position:relative;
-    height:80px;
-    left:7em;
-    padding-left: 15px;
-    padding-top: 40px;
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.btn-encript, .btn-desencript{
-    width:328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
-    font-weight: 400;
-    cursor:pointer;
-}
-.btn-encript{
-    background-color: #0A3871;
-    color: white;
-    border:none;
-    margin-right: 20px;
-}
-.btn-desencript{
-    background-color: #D8DFE8;
-    color: #0A3871;
-    border:1px solid #0A3871;
-}
-.section2{
-    position:absolute;
-    display:block;
-    left: 65%;
-    top:1em;
-    width:320px;
-    height:96%;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    border-radius: 32px;
-    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.50);
-
+nav a:hover {
+  text-decoration: underline;
 }
 
-.container-muneco{
-    position:relative;
-    top:10%;
-    box-sizing: border-box;
-    padding-top: 30px;
-}
-.container-muneco img{
-    width: 90%;
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.container-mensaje{
-    position: relative;
-    box-sizing: border-box;
-    top:5.5em;
+h2 {
+  color: #007c91;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
 }
 
-.container-mensaje h3{
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    color:#343A40;
-}
-.container-mensaje p{
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    color:#343A40;
-    padding-top:20px;
+p {
+  margin-bottom: 1rem;
 }
 
-.container-resultado{
-    position: absolute;
-    width:320px;
-    height:450px;
-    top:3em;
-    padding: 0;
-    box-sizing: border-box;
-    margin-left: 25px;
-
-}
-.container-resultado{
-    color:#495057;
-    font-size: 25px;
-
+.project {
+  background-color: #ffffff;
+  border: 1px solid #cdeeee;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.container-copy{
-     display: flex;
-     bottom: 20px;
-     position: absolute;
+.project h3 {
+  color: #0097a7;
 }
 
-.btn-copy{
-    width:280px;
-    height:67px;
-    margin-left:15% ;
-    border-radius: 24px;
-    background-color: #ffffff;
-    color:#0A3871;
-    font-size: 16px;
-    font-weight: 400;
-    border: 1px solid #0A3871;
-    cursor: pointer;
+video {
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.ocultar{
-    display:none;
+footer {
+  background-color: #00bcd4;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Icons */
+h2::before, h3::before {
+  margin-right: 0.5rem;
+  color: #0097a7;
+}
+
+#about h2::before { content: "\f406"; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+#skills h2::before { content: "\f121"; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+#projects h2::before { content: "\f0ae"; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+#contact h2::before { content: "\f2b9"; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+
+a i {
+  margin-right: 5px;
 }
